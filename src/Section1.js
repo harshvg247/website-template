@@ -11,14 +11,30 @@ const Section1 = () => {
   let desktopItem = useRef(null);
   let innerContainerItem = useRef(null);
   useEffect(() => {
-    gsap.fromTo(
+    // gsap.fromTo(
+    //     desktopItem,
+    //     { xPercent: 100, opacity: 0, height: "0%", rotation: 270},
+    //     { xPercent: 0, opacity: 1, duration: 1, rotation: 360, height: "90%", scrollTrigger: {
+    //         trigger: innerContainerItem,
+    //         toggleActions: "play none none none"            
+    //     } }
+    //   );
+      // gsap.fromTo(
+      //   desktopItem,
+      //   { rotationY: 90},
+      //   {  rotationY: 0,duration:1, opacity:1, scrollTrigger: {
+      //       trigger: innerContainerItem,
+      //       toggleActions: "play none none none"            
+      //   } }
+      // );
+      var t1 = gsap.timeline({scrollTrigger:{
+        trigger: innerContainerItem
+      }});
+      t1.fromTo(
         desktopItem,
-        { xPercent: 100, opacity: 0, height: "0%", rotation: 270},
-        { xPercent: 0, opacity: 1, duration: 1, rotation: 360, height: "90%", scrollTrigger: {
-            trigger: innerContainerItem,
-            toggleActions: "play none none none"            
-        } }
-      );
+        { rotationY: 90},
+        {  rotationY: 0,duration:1, opacity:1 }
+      )
     gsap.fromTo(
       innerContainerItem,
       { yPercent: 20, opacity: 0 },

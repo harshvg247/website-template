@@ -1,7 +1,8 @@
 #section7 {
-    width: calc(100% - 4rem);
+
     margin: 2rem;
-    border-radius: 2rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
     padding: 5rem 0 7rem 0;
     box-sizing: border-box;
     background-color: #edf8fe;
@@ -96,7 +97,7 @@
     width: 48rem;
     height: 16rem;
     background: white;
-    border-radius: 2rem;
+    border-radius: 1rem;
     box-shadow: 0 1rem 4rem #1c3a4a33;
 }
 
@@ -126,9 +127,9 @@
     color: #fffd;
     font-weight: bold;
     position: absolute;
-    transform: translateY(-3.6rem);
+    transform: translateY(-4.5rem);
 }
 
 .path-item:nth-of-type(even)::after {
-    transform: translateY(1.8rem);
+    transform: translateY(1.3rem);
 }
