@@ -105,6 +105,7 @@ code {
   color: white;
   align-items: center;
   border-radius: .5rem;
+  height: 4rem;
 }
 #section1 .appStoreButton img{
   height: 80%;
@@ -232,4 +233,74 @@ code {
   font-size: 2rem;
   gap: 1.5rem;
   padding: 10rem;
+}
+
+/* #section11 */
+#section11{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid rgba(43, 38, 38, 0.305);
+  margin-top: 6rem;
+  gap: 2rem;
+  height: 40rem;
+}
+#section11 .logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  
+}
+#section11 .contact-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  gap: 2rem;
+}
+#section11 .address, #section11 .email{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+} 
+#section11 .address img, #section11 .email img{
+  height: 4rem;
+  background-color: rgb(100, 219, 112);
+  padding: .4rem;
+  border-radius: 50%;
+}
+#section11 .appStoreButton{
+  display: flex;
+  width: 12rem;
+  background-color: black;
+  color: white;
+  align-items: center;
+  border-radius: .5rem;
+  height: 4rem;
+  margin: 1rem;
+}
+#section11 .appStoreButton img{
+  height: 80%;
+  opacity: 1;
+}
+#section11 .appStoreButton .appStoreButtonText{
+  width: 70%;
+}
+#section11 .appStoreButton .appStoreButtonText .logoSubtitle{
+  font-size: 1.4rem;
+}
+#section11 .copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+#section11 .copyright img{
+  height:2rem;
+  margin: .2rem;
 }
