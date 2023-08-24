@@ -32,9 +32,9 @@ const Section3 = () => {
             { yPercent: 0, opacity: 1, duration: 1, scrollTrigger: {
                 trigger: ".card",
                 //start: "top center",
-                markers: true,
-                start: "20px 80%",//when elemetn reaches 20px above 80% line from top
-                // toggleActions: "none none none none"
+                // markers: true,
+                ///start: "20px 80%",//when elemetn reaches 20px above 80% line from top
+             toggleActions: "restart none none none"
             } }
           );
     }, [])
