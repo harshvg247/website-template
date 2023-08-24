@@ -129,21 +129,23 @@ code {
   height: 90%;
 }
 /*Section2*/
-#section2{
-  margin: 2rem;
-  margin-top: 3rem;
+#section2, #section6{
+  margin: 15rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 4rem;
   display: flex;
+  flex-direction: row;
+  column-gap: 4rem;
 }
-#section2 h3{
-  width: 30%;
-  padding: 1rem;
-  font-size: 3.2rem;
+#section2 h3, #section6 h3 {
+  width: 100%;
+  font-size: 2.5rem;
   padding-left: 5rem;
 }
-#section2 p{
-  width: 35%;
-  font-size: 2rem;
-  padding: 1.5rem;
+#section2 p, #section6 p{
+  width: 100%;
+  font-size: 1.5rem;
 }
 
 /*section 3*/
