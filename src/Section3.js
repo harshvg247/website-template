@@ -15,7 +15,7 @@ const Section3 = () => {
         let frontBtn = document.querySelector(".frontbtn");
         scrollContainer.addEventListener("wheel", (evt)=>{
             evt.preventDefault();
-            scrollContainer.scrollLeft += 3*evt.deltaY;
+            scrollContainer.scrollLeft += 2*evt.deltaY;
         })
         backBtn.addEventListener("click", ()=>{
             scrollContainer.scrollLeft -= 516;
@@ -27,16 +27,20 @@ const Section3 = () => {
         })
 
         gsap.fromTo(
-            ".card",
+            "#section3 .card",
             { yPercent: 20, opacity: 0 },
             { yPercent: 0, opacity: 1, duration: 1, scrollTrigger: {
                 trigger: ".card",
                 //start: "top center",
                 // markers: true,
                 ///start: "20px 80%",//when elemetn reaches 20px above 80% line from top
-             toggleActions: "restart none none none"
+                start: "20px 80%", end: "20px 80%", markers:true,
+             toggleActions: "restart none reset reverse"
             } }
           );
+          var t1 = gsap.timeline({scrollTrigger:{trigger: "#section3 h2", start:"0 80%",end: "0px 80%", toggleActions: "restart none reset reverse"}});
+        t1.fromTo("#section3 h2", {x: -200, opacity:0}, {x:40, opacity: 1, duration: .6, });
+        t1.to("#section3 h2", {x:0, duration: .3});
     }, [])
 
     return ( 
