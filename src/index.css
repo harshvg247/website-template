@@ -108,6 +108,7 @@ code {
 }
 #section1 .appStoreButton img{
   height: 80%;
+  opacity: 1;
 }
 #section1 .appStoreButton .appStoreButtonText{
   width: 70%;
