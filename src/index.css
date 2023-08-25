@@ -21,6 +21,9 @@ code {
   box-sizing: border-box;
 }
 
+button:hover{
+  cursor: pointer;
+}
 /**Navbar**/
 .navbar{
   margin: .2rem;
@@ -47,7 +50,7 @@ code {
   
 }
 .navbar button{
-  all: unset;
+  
   background-color: black;
   color: white;
   padding: .3rem;
@@ -57,7 +60,7 @@ code {
   align-items: center;
   font-size: 1rem;
   width: 8rem;
-  height: 2rem;
+  height: 2.3rem;
 }
 
 /**Section1**/
@@ -206,6 +209,9 @@ code {
 #section3 .backbtn img, #section3 .frontbtn img{
   height: 2.5rem;
 }
+#section3 .backbtn img:hover, #section3 .frontbtn img:hover{
+  cursor: pointer;
+}
 
 /* section4 */
 #section4{
@@ -246,6 +252,97 @@ code {
   font-size: 2rem;
   gap: 1.5rem;
   padding: 10rem;
+}
+
+/* section8 */
+#section8{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  gap: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+#section8 .signature-line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section8 .signature-line .signature{
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 2.4rem;
+  margin-left: .5rem;
+}
+#section8 .button-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: .3rem;
+}
+#section8 button{
+  background-color: black;
+  color: white;
+  height: 2.4rem;
+  width: 5.2rem;
+  border-radius: 1.2rem;
+}
+#section8 .button-div p{
+  font-size: .8rem;
+}
+
+/* section10 */
+#section10{
+  margin: 4rem;
+}
+#section10 h2{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+#section10 .cards{
+  display: flex;
+  gap: 1rem;
+  margin-left: 3rem;
+}
+#section10 .card{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(251, 243, 222);
+  padding: .8rem;
+  border-radius: 1rem;
+  gap: .8rem;
+  transition: all .8s;
+  overflow: hidden;
+  height: 11rem;
+  width: 20rem;
+}
+#section10 .card button{
+ 
+  margin-top: 1.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  padding:.5rem;
+  width: 6rem;
+  text-align: center;
+  align-self: flex-end;
+}
+#section10 .card:hover{
+  background-color: rgb(237, 214, 158);
+  height: 16rem;
+}
+#section10 .card-line{
+  display: flex;
+  align-items: center;
+}
+#section10 .card img{
+  height: .8rem;
 }
 
 /* #section11 */
