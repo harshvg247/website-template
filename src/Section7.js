@@ -42,7 +42,7 @@ export default function Section7() {
           trigger: pathitems,
           start: "0 80%",
           end: "0px 80%",
-          toggleActions: "restart none reset reverse",
+          toggleActions: "restart none reverse reverse",
         },
       });
       for(let i=0;i<pathitems.length;i++){
