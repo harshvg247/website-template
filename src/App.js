@@ -7,6 +7,7 @@ import Section5 from "./Section5";
 import Section6 from "./Section6";
 import Section7 from "./Section7";
 import Section8 from "./Section8";
+import Section9 from "./Section9";
 import Section10 from "./Section10";
 import Section11 from "./Section11";
 import { gsap } from "gsap";
@@ -23,6 +24,7 @@ function App() {
       <Section6 />
       <Section7/>
       <Section8/>
+      <Section9/>
       <Section10/>
       <Section11/>
 

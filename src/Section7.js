@@ -82,7 +82,7 @@ export default function Section7() {
         <div id="path-line">
           <div
             className="path-item"
-            data-text="Anonymous 0"
+            data-text="You"
             style={{ backgroundColor: "#6241eb" }}
           ></div>
           <div

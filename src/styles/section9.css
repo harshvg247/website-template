@@ -1,0 +1,126 @@
+#section9 {
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 4rem;
+    box-sizing: border-box;
+    background-color: #f3f1ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section9 #sec9-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#section9 #sec9-title h2 {
+    font-size: 3rem;
+    width: max-content;
+}
+
+#section9 #sec9-title h2:nth-of-type(2) {
+    color: #8735e4;
+}
+
+#sec9-content {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#sec9-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: white;
+    border-radius: 1.5rem;
+    height: max-content;
+    box-shadow: 0 0.5rem 2rem #221a4e11;
+
+}
+
+#sec9-info img {
+    height: 3rem;
+    width: max-content;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+#sec9-info #sec9-product,
+#sec9-info #sec9-about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+#sec9-info h5 {
+    font-size: 1.25rem;
+}
+
+#sec9-info span {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+#sec9-info #sec9-product {
+    background: #fef7f1;
+}
+
+#sec9-scroll {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-height: 34rem;
+    overflow-y: scroll;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    row-gap: 1.5rem;
+}
+
+/* width */
+#sec9-scroll::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+  
+  /* Track */
+  #sec9-scroll::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 0.1rem #dddd;
+  }
+  
+  /* Handle */
+  #sec9-scroll::-webkit-scrollbar-thumb {
+    background: #8735e4bb;
+    border-radius: 0.5rem;
+  }
+  
+  /* Handle on hover */
+  #sec9-scroll::-webkit-scrollbar-thumb:hover {
+    background: #8735e4;
+  }
+
+.sec9-scroll-item {
+    width: calc(100% - 12rem);
+    margin: 0 4rem 0 8rem;
+    background: white;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 2rem #221a4e11;
+}
+
+.sec9-scroll-item h6 {
+    font-size: 1.2rem;
+}
+
+.sec9-scroll-item span {
+    opacity: 0.8;
+}

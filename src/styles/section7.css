@@ -127,9 +127,10 @@
     color: #fffd;
     font-weight: bold;
     position: absolute;
-    transform: translateY(-4.5rem);
+    transform: translateY(-3.6rem);
+    width: max-content;
 }
 
 .path-item:nth-of-type(even)::after {
-    transform: translateY(1.3rem);
+    transform: translateY(1.8rem);
 }
