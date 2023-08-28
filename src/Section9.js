@@ -3,6 +3,36 @@ import "./styles/section9.css";
 import happyblob from "./images/happyblob.png"
 
 export default function Section9() {
+
+    const cardListData = [
+        {
+            "title": "Power through, even when the going gets tough",
+            "text": "We help you spot and work around whatever stands in the way, be it bad habits, fears, etc"
+        },
+        {
+            "title": "Learn more about who you are and where you want to go",
+            "text": "We ask the right questions to help you better understand why you do things the way you do."
+        },
+        {
+            "title": "Play and grow together with others on the same journey",
+            "text": "Ahead feels like a game, not like a chore. See yourself grow every day towards achieving your goals!"
+        },
+        {
+            "title": "Master how to make it happen in real life",
+            "text": "We support you towards ninja-level skills with sleek tools such as dry-runs, quizzes, and flashcards."
+        },
+        {
+            "title": "Learn about practical skills that you can actually use in real life",
+            "text": "We teach you smart psychological techniques and habit-forming strategies that are easy to apply."
+        },
+        {
+            "title": "Get support that's made for your needs",
+            "text": "We build your personal roadmap of lessons and actions towards your goals."
+        }
+        
+    ]
+
+
   return (
     <div id='section9'>
         <div id='sec9-title'>
@@ -15,35 +45,23 @@ export default function Section9() {
                 <div id="sec9-about">
                     <img src={happyblob} alt="" />
                     <h5>About</h5>
-                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aspernatur ducimus, amet enim optio possimus! Sint unde vero facere consequuntur? Eveniet fugiat tempora eum incidunt? Enim officia quaerat dignissimos atque.</span>
+                    <span>At ahead our goal is to make self-improvement fun and lasting. We know there's a way how to make it work. And that's what aHead is all about!</span>
                 </div>
                 <div id="sec9-product">
                     <h5>Product</h5>
-                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aspernatur ducimus, amet enim optio possimus! Sint unde vero facere consequuntur? Eveniet fugiat tempora eum incidunt? Enim officia quaerat dignissimos atque.</span>
+                    <span>Sure, you could spend ages reading books or sitting in seminars on how to become a better spouse, parent, or manager - like we did...</span>
                 </div>
             </div>
             <div id="sec9-scroll">
-            <div className="sec9-scroll-item">
-                    <h6>This is a something that I don't have a name for</h6>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo asperiores molestias ab quod maiores possimus sed commodi illo quasi eos.</span>
-                </div>
-                <div className="sec9-scroll-item">
-                    <h6>This is a something that I don't have a name for again</h6>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo asperiores molestias ab quod maiores possimus sed commodi illo quasi eos.</span>
-                </div>
-                <div className="sec9-scroll-item">
-                    <h6>This is a something that I don't have a name for again</h6>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo asperiores molestias ab quod maiores possimus sed commodi illo quasi eos.</span>
-                </div>
-                <div className="sec9-scroll-item">
-                    <h6>This is a something that I don't have a name for again</h6>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo asperiores molestias ab quod maiores possimus sed commodi illo quasi eos.</span>
-                </div>
-                <div className="sec9-scroll-item">
-                    <h6>This is a something that I don't have a name for again</h6>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo asperiores molestias ab quod maiores possimus sed commodi illo quasi eos.</span>
-                </div>
 
+                {cardListData && cardListData.map((card, i) => {
+                    return (
+                        <div key={i} className="sec9-scroll-item">
+                            <h6>{card.title}</h6>
+                            <span>{card.text}</span>
+                        </div>
+                    )
+                })}
             </div>
         </div>
 
