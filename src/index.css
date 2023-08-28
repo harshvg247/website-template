@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 body {
   margin: 0;
@@ -28,7 +28,7 @@ button:hover{
 /**Section1**/
 #section1{
   margin: 2rem;
-  margin-top: 0;
+  margin-top: 7rem;
   display: flex;
   height: 25rem;
   background-color: var(--col1);

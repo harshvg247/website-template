@@ -1,39 +1,44 @@
 /**Navbar**/
 .navbar{
-    margin: .2rem;
     display: flex;
-    gap: 1.4rem;
-    font-size: 1.2rem;
     align-items: center;
-    height: 3rem;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 0 6rem;
+    height: 6rem;
+    background-color: white;
+    top: 0;
+    left: 0;
   }
-  .navbar ul{
-    list-style: none;
+  .navbar #navlinks {
     display: flex;
-    gap: 2rem;
-    width: 60%;
-    justify-content: center;
+    column-gap: 2rem;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .navbar #navlinks a { 
+    text-decoration: none;
+    color: black;
   }
   .navbar img{
-    height: 3rem;
-    margin-left: 4rem;
-    margin-right: 2rem;
-    /* background-color: #d4b6ef;
-    border-radius: 50%; */
-    padding: .3rem;
-    
+    height: 4rem;
   }
+
   .navbar button{
-    
     background-color: black;
     color: white;
-    padding: .3rem;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    width: 8rem;
-    height: 2.3rem;
+    height: 3rem;
+    padding: 0 1.5rem;
+    font-family: "Poppins", sans-serif;
+    margin-left: 4rem;
   }
   

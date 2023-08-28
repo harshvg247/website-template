@@ -1,6 +1,6 @@
 //footer
 import appleLogo from "../images/appleLogo.png";
-import logo from "../images/companyLogo.png"; 
+import logo from "../images/company_logo.png"; 
 import email from "../images/email.png";
 import location from "../images/location.png";
 import copyright from "../images/copyright.png";
