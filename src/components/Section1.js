@@ -1,6 +1,6 @@
-import appleLogo from "./images/appleLogo.png";
-import stars from "./images/stars.png";
-import desktop from "./images/desktop.png";
+import appleLogo from "../images/appleLogo.png";
+import stars from "../images/stars.png";
+import desktop from "../images/desktop.png";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
