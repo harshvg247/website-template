@@ -19,6 +19,9 @@
 #section7 h2 {
     font-size: 3rem;
 }
+#container{
+    opacity: 0;
+}
 
 #procedure-chart {
     width: 50rem;
@@ -76,7 +79,7 @@
 .procedure-step::after {
     text-align: center;
     display: block;
-    max-width: 12rem;
+    width: 12rem;
     font-size: 0.9rem;
     content: attr(data-text);
     position: absolute;

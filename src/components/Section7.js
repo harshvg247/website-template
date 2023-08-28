@@ -53,6 +53,21 @@ export default function Section7() {
         );
         t3.to(pathitems[i], { rotateZ:0, duration: 0.2 });
       }
+      var t4 = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#container",
+          start: "0 80%",
+          end: "0px 80%",
+          toggleActions: "restart none reset reverse",
+        },
+      });
+      t4.fromTo(
+        "#container",
+        { opacity: 0, y:50, scale:1 },
+        { opacity: 1, duration: 0.4, y:-10, scale:1 }
+      );
+      t4.to("#container", { duration: 0.3, scale:1, y:0});
+      
       
 
   }, []);
@@ -61,6 +76,7 @@ export default function Section7() {
     <div id="section7">
       <h5>This a some kind of a subtitle</h5>
       <h2>But this is a title!</h2>
+      <div id="container">
       <div id="procedure-chart">
         <div className="procedure-step" data-text="This is the step 1">
           <span>1</span>
@@ -77,6 +93,7 @@ export default function Section7() {
         >
           <span>3</span>
         </div>
+      </div>
       </div>
       <div id="path-chart">
         <div id="path-line">

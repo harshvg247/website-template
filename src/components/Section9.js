@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../styles/section9.css";
 import happyblob from "../images/happyblob.png"
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Section9() {
 
@@ -32,12 +36,56 @@ export default function Section9() {
         
     ]
 
+    useEffect(()=>{
+        var t1 = gsap.timeline({
+            scrollTrigger: {
+              trigger: "#sec9-title #section-title",
+              start: "0 70%",
+              end: "0px 70%",
+              toggleActions: "restart none reset reverse",
+            },
+          });
+          t1.fromTo(
+            "#sec9-title #company-name",
+            { x: -200, opacity: 0 },
+            { x: 40, opacity: .8, duration: 0.6 }
+          );
+          t1.to("#sec9-title #company-name", { x: 0, duration: 0.3, opacity:1 });
+          var t2 = gsap.timeline({
+            scrollTrigger: {
+              trigger: "#sec9-title #company-name",
+              start: "0 70%",
+              end: "0px 70%",
+              toggleActions: "restart none reset reverse",
+            },
+          });
+          t2.fromTo(
+            "#sec9-title #section-title",
+            { x: 200, opacity: 0 },
+            { x: -40, opacity: .8, duration: 0.6 }
+          );
+          t2.to("#sec9-title #section-title", { x: 0, duration: 0.3, opacity:1 });
+          var t3 = gsap.timeline({
+            scrollTrigger: {
+              trigger: "#sec9-content img",
+              start: "0 90%",
+              end: "0px 90%",
+              toggleActions: "restart none reset reverse",
+            },
+          });
+          t3.fromTo(
+            "#sec9-content img",
+            { rotateZ:30, scale:.9, transformOrigin:"50% 20%" },
+            { rotateZ:-30, scale:1.2, duration: 0.6, repeat:-1, yoyo:"true", }
+          );
+    }, []);
+
 
   return (
     <div id='section9'>
         <div id='sec9-title'>
-            <h2>Work with us</h2>
-            <h2>ahead</h2>
+            <h2 id='section-title'>Work with us</h2>
+            <h2 id='company-name'>ahead</h2>
         </div>
 
         <div id="sec9-content">

@@ -19,6 +19,7 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 button:hover{
@@ -34,6 +35,31 @@ button:hover{
   background-color: var(--col1);
   border-radius: 1rem;
   padding: 2rem;
+  position: relative;
+}
+#section1 .leaf1{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+#section1 .leaf2{
+  top: 18rem;
+  left: 30%;
+  transform: rotateZ(30deg);
+  position: absolute;
+}
+#section1 .flower2{
+  top: 20rem;
+  left: 55%;
+  transform: rotateZ(30deg);
+  position: absolute;
+}
+#section1 .flower1{
+  top: 2rem;
+  left: 40%;
+  transform: rotateZ(30deg);
+  position: absolute;
 }
 #section1 .text{
   width: 40%;
@@ -41,6 +67,7 @@ button:hover{
   justify-content: center;
   align-items: center;
 }
+
 
 #section1 .text .innerContainer{
   width: 80%;
@@ -60,13 +87,45 @@ button:hover{
   height: 100%;
   
 }
-#section1 img{
+#section1 .image img{
   opacity: 0;
   }
+#section1 .circle{
+  content: " ";
+  height: 1px;
+  width: 1px;
+  background-color: aliceblue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section1 .circle::after{ 
+  content: "";
+  height: 65vh;
+  width: 65vh;
+  border-radius: 50%;
+  border: 5px dashed white;
+  position: absolute;
+  opacity: .5;
+}
+#section1 .circle::before{ 
+  content: "";
+  height: 55vh;
+  width: 55vh;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #b375e9;
+  opacity: .5;
+}
 #section1 .rating{
   display: flex;
   margin-top: 1rem;
   gap: 1rem;
+  align-items: center;
+  
 }
 #section1 .appStoreButton{
   display: flex;
@@ -95,6 +154,7 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 #section1>.image img{
   height: 90%;
@@ -153,7 +213,7 @@ button:hover{
   display: none;
 }
 #section3 .card{
-  height: 10rem;
+  height: 11rem;
   width: 18rem;
   background-color: #d4b6ef;
   padding: .8rem;

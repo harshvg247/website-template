@@ -1,6 +1,10 @@
 import appleLogo from "../images/appleLogo.png";
 import stars from "../images/stars.png";
 import desktop from "../images/desktop.png";
+import leaf1 from "../images/leaf.png";
+import leaf2 from "../images/leaf2.png";
+import flower1 from "../images/flower1.png";
+import flower2 from "../images/flower2.png";
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -40,16 +44,47 @@ const Section1 = () => {
       { yPercent: 20, opacity: 0 },
       { yPercent: 0, opacity: 1, duration: 1 }
     );
+    let t2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".leaf1",
+      },
+    });
+    t2.fromTo(
+      [".leaf1", ".leaf2"],
+      { y: -50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 4, rotateZ:"+=30", ease:"elastic" }
+    );
+    gsap.fromTo(
+      [".flower1", ".flower2"],
+      { rotationZ: 0},
+      {  rotationZ: 360,duration:8, opacity:1,repeat:-1,ease:"none", scrollTrigger: {
+          trigger: ".flower1",
+          toggleActions: "play none none none"            
+      } }
+    );
   }, []);
   return (
     <div id="section1">
       <section className="text">
+      <div className="leaf1">
+          <img src={leaf2} alt="" />
+        </div>
+        <div className="leaf2">
+          <img src={leaf2} alt="" />
+        </div>
+        <div className="flower1">
+          <img src={flower1} alt="" />
+        </div>
+        <div className="flower2">
+          <img src={flower2} alt="" />
+        </div>        
         <div
           ref={(el) => {
             innerContainerItem = el;
           }}
           className="innerContainer"
         >
+          
           <p className="subtitle">Ahead App</p>
           <p className="title">Master your life by mastering emotions</p>
           <div className="rating">
@@ -67,6 +102,7 @@ const Section1 = () => {
         </div>
       </section>
       <section className="image">
+        <div className="circle"></div>
         <img
           ref={(el) => {
             desktopItem = el;
