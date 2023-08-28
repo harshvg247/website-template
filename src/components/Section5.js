@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import "./styles/timeline.css"
+import "../styles/timeline.css"
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

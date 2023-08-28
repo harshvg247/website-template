@@ -1,5 +1,5 @@
 // Meet the ahead app
-import desktop from "./images/desktop1.png";
+import desktop from "../images/desktop1.png";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

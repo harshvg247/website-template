@@ -1,6 +1,6 @@
 import React from 'react'
-import "./styles/section9.css";
-import happyblob from "./images/happyblob.png"
+import "../styles/section9.css";
+import happyblob from "../images/happyblob.png"
 
 export default function Section9() {
 

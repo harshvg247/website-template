@@ -1,6 +1,6 @@
 // Open vacancies
 import { useEffect } from "react";
-import dot from "./images/dot.png";
+import dot from "../images/dot.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

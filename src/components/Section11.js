@@ -1,9 +1,9 @@
 //footer
-import appleLogo from "./images/appleLogo.png";
-import logo from "./images/companyLogo.png"; 
-import email from "./images/email.png";
-import location from "./images/location.png";
-import copyright from "./images/copyright.png";
+import appleLogo from "../images/appleLogo.png";
+import logo from "../images/companyLogo.png"; 
+import email from "../images/email.png";
+import location from "../images/location.png";
+import copyright from "../images/copyright.png";
 const Section11 = () => {
     return ( 
         <div id="section11">

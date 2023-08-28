@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./styles/section7.css";
+import "../styles/section7.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

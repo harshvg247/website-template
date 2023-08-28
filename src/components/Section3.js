@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import emoji from "./images/emoji.png";
-import backArrow from "./images/left-arrow.png";
-import frontArrow from "./images/right-arrow.png";
+import emoji from "../images/emoji.png";
+import backArrow from "../images/left-arrow.png";
+import frontArrow from "../images/right-arrow.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

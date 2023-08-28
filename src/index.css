@@ -24,44 +24,6 @@ code {
 button:hover{
   cursor: pointer;
 }
-/**Navbar**/
-.navbar{
-  margin: .2rem;
-  display: flex;
-  gap: 1.4rem;
-  font-size: 1.2rem;
-  align-items: center;
-  height: 3rem;
-}
-.navbar ul{
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  width: 60%;
-  justify-content: center;
-}
-.navbar img{
-  height: 3rem;
-  margin-left: 4rem;
-  margin-right: 2rem;
-  /* background-color: #d4b6ef;
-  border-radius: 50%; */
-  padding: .3rem;
-  
-}
-.navbar button{
-  
-  background-color: black;
-  color: white;
-  padding: .3rem;
-  border-radius: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  width: 8rem;
-  height: 2.3rem;
-}
 
 /**Section1**/
 #section1{
